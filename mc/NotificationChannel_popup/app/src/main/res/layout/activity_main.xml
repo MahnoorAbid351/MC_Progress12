@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/edit_text_title"
+        android:layout_width="match_parent"
+        android:textColor="@color/black"
+        android:textColorHint="#909091"
+        android:padding="5dp"
+        android:background="#66C7C8C8"
+        android:outlineAmbientShadowColor="#347388"
+        android:layout_height="wrap_content"
+        android:hint="Title" />
+
+    <EditText
+        android:id="@+id/edit_text_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColorHint="#909091"
+        android:padding="5dp"
+        android:background="#66C7C8C8"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/black"
+        android:hint="Message" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:onClick="sendOnChannel1"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/white"
+        android:background="@drawable/purple_gradiant"
+        android:text="Send on Channel 1" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:onClick="sendOnChannel2"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/white"
+        android:background="@drawable/purple_gradiant"
+        android:text="Send on Channel 2" />
+
+</LinearLayout>
